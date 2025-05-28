@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #004080, #0e0e0e);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-btn, .home-btn {
+    background: #003366;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-btn:hover, .home-btn:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 20px;
+}
+
+.profile-wrapper, .stats-wrapper {
+    position: relative;
+    margin: 20px 0;
+}
+
+.profile-shadow, .stats-shadow {
+    position: absolute;
+    background-color: black;
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+.profile-card, .stats-section {
+    position: relative;
+    background-color: #333333;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(95, 15, 170, 0.5);
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover ~ .profile-shadow, .stats-section:hover ~ .stats-shadow {
+    transform: translate(5px, 5px);
+}
+
+.profile-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #000033, #004080);
+    border-radius: 100px;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.input-group:hover {
+    background: linear-gradient(135deg, #002266, #0b052e);
+}
+
+.input-group label {
+    flex: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 80px;
+    border: none;
+    color: white;
+    background-color: #1b1b1b;
+    outline: none;
+    resize: none;
+}
+
+.input-group img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.save-button {
+    padding: 10px 20px;
+    background: linear-gradient(130deg, #004080, #000000);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(95, 15, 170, 0.5);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #0059b3;
+    transform: scale(1.05);
+}
+
+.profile-picture-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-picture {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(95, 15, 170, 0.5);
+}
+
+#Img_User {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camera-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #201e1e;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #004080, #0e0e0e);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(95, 15, 170, 0.5);
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #0059b3;
+    box-shadow: 3px 3px 15px rgba(95, 15, 170, 0.5);
+}
+
+.stats-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.stat-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.stat-item input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.2em;
+}

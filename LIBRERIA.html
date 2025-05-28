@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Biblioteca Virtual</title>
+      <link rel="stylesheet" href="LIBRERIA.css">
+</head>
+
+<body>
+      <div class="top-bar">
+            <div class="top-section">
+                <div class="left-section">
+                    <a href="LIBRERIA.html" class="back-btn">
+                        <img src="./Media/arrow_back_ios_27dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" width="25" height="25">
+                    </a>
+                    <a href="index.html" class="home-btn">
+                        <img src="./Media/casa.png" width="25" height="25">
+                    </a>
+                </div>
+        
+                <div class="search-section">
+                    <input type="text" placeholder="Buscar..." class="search-bar">
+                </div>
+        
+                <div class="right-section">
+                    <a href="Perfil-usuario.html" class="user-link">
+                        <div class="user-info">
+                            <span>USUARIO</span>
+                            <div class="user-icon"><img src="./Media/User.png" width="30" height="30"></div>
+                            <span class="streak-icon"><img src="./Media/Pluma.png" width="20" height="20"></span>
+                            <span class="streak-text">RACHA</span>
+                            <span class="streak-number">7</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="bottom-section">
+                <a href="Contacto.html" class="contact-btn">CONTACTANOS
+                    <img src="./Media/Telefono.png" width="15" height="15">
+                </a>
+                <a href="Nosotros.html" class="about-btn">ACERCA DE NOSOTROS
+                    <img src="./Media/info_27dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" width="15" height="15">
+                </a>
+                <a href="Inicio-registro.html" class="tnc-btn">Inicio y registro ✨</a>
+            </div>
+        </div>
+        
+        
+
+      <div class="library-container">
+            <div class="book-display" id="book-display">
+                  <div class="book-cover-large" id="book-cover-large">
+                        <img src="./Galeria/GATITO333.jpg" alt="Portada"
+                              style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div class="book-title" id="book-title">Título del Libro</div>
+                  <div class="book-description" id="book-description">Descripción del libro seleccionado aparecerá aquí.
+                  </div>
+                  <a id="read-book-button" href="#" class="read-book-button" style="display: none;">
+                        Leer Mas
+                  </a>
+            </div>
+
+            <div class="book-grid">
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'lectura.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 1">
+                  </div>
+
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 2">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 3">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 4">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 5">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 6">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 7">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 8">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 9">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 10">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 11">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 12">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 13">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 14">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 15">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 16">
+                  </div>
+                  <div class="book-thumbnail"
+                        onclick="selectBook('Media/GOD.png', 'El nombre del viento', 'Uno de los mejores libros de los tiempos accion drama y amor...', 'libros/nombre-del-viento.html')">
+                        <img src="Media/GOD.png" alt="Portada del Libro 17">
+                  </div>
+
+
+            </div>
+      </div>
+
+      <script src="../PAGINA-FINALsimple/Scripts/scriptLIBRERIA.js"></script>
+</body>
+
+</html>

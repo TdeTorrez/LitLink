@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitLink - Login y Registro</title>
+    <link rel="stylesheet" href="Inicio.css">
+</head>
+
+<body>
+
+    <div class="contenedor-boton-volver">
+        <a href="LIBRERIA.html" class="boton-volver"><img src="./Media/arrow_back_ios_27dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="" width="25" height="25"></a>
+    </div>
+    
+    <div class="contenedor">
+        <div class="contenedor-logo">
+            <div class="logo">
+                <div class="area-clickable">
+                    <img id="logoK" src="./Galeria/LogoLitlink.png" alt="Logo" style="width: 150px; height: 150px;">
+                </div>
+                <p id="texto-litlink">LitLink</p>
+            </div>
+        </div>
+
+        <div class="wrapper-formularios">
+            <form id="formulario-registro" class="formulario formulario-derecha">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellidos" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="date" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Confirma Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+
+            <form id="formulario-login" class="formulario formulario-izquierda">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        
+        <span id="from">from</span>
+        <span id="autor">javiera londoño</span>
+    </div>
+
+    <script src="../PAGINA-FINALsimple/Scripts/InicioScript.js"></script>
+</body>
+
+</html>

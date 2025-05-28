@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(to right, #1c1387, #000000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000000, #1c1387);
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+
+body.mostrar-login::before {
+    opacity: 1;
+}
+
+body.mostrar-registro::before {
+    opacity: 0;
+}
+
+.scale-container {
+    transform: scale(0.8); 
+    transform-origin: center;
+}
+
+.contenedor-boton-volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; 
+}
+
+.boton-volver {
+    width: 25px;
+    height: 25px;
+    background-color: #3b2ad4;
+    padding: 18px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-volver:hover {
+    background-color: #2812a0;
+    transform: scale(1.1);
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.contenedor-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    z-index: 2;
+}
+
+.area-clickable {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+#texto-litlink {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 0rem;
+}
+
+.wrapper-formularios {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.formulario {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: -100px;
+}
+
+.formulario input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.8rem;
+    background-color: #5a4cdb;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e2d9d;
+}
+
+.formulario-izquierda {
+    left: 0;
+    opacity: 0;
+}
+
+.formulario-derecha {
+    right: 0;
+    opacity: 0;
+}
+  
+  .transicion-izquierda {
+      transform: translateX(-200%) translateY(-50%);
+  }
+  
+  .transicion-derecha {
+      transform: translateX(100%) translateY(-50%);
+  }
+  
+  .mostrar-formularios {
+      display: flex !important;
+  }
+  
+  .formulario.activo {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  
+  #footer {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      display: none; 
+  }
+  
+  #footer span {
+      display: block;
+  }
+  
+  #from {
+      color: rgb(233, 127, 57);
+      font-size: 1.2rem; 
+  }
+  
+  #autor {
+      font-size: 1rem; 
+  }
+  
